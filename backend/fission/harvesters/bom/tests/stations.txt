@@ -1,0 +1,19 @@
+Bureau of Meteorology product IDCJMC0014.                                       Produced: 03 May 2024
+
+   Site  Dist  Site name                                 Start     End      Lat       Lon Source         STA Height (m)   Bar_ht    WMO
+------- ----- ---------------------------------------- ------- ------- -------- --------- -------------- --- ---------- -------- ------
+ 001000 01    KARUNJIE                                    1940    1983 -16.2919  127.1956 .....          WA       320.0       ..     ..
+ 001001 01    OOMBULGURRI                                 1914    2012 -15.1806  127.8456 GPS            WA         2.0       ..     ..
+ 001002 01    BEVERLEY SP                                 1959    1967 -16.5825  125.4828 .....          WA          ..       ..     ..
+ 001003 01    PAGO MISSION                                1908    1940 -14.1331  126.7158 .....          WA         5.0     24.4     ..
+ 001004 01    KUNMUNYA                                    1915    1948 -15.4167  124.7167 .....          WA        47.0       ..     ..
+ 300055 300   DAVIS (WHOOP WHOOP)                         2007      .. -68.4723   78.8735 GPS            ANT      577.0    579.0  89570
+ 300060 300   CASEY SKIWAY SOUTH                          2008      .. -66.2803  110.7615 GPS            ANT      390.0    398.5  89809
+ 300061 300   BUNGER HILLS                                2015      .. -66.2510  100.6000 GPS            ANT       12.0     16.0  89817
+ 300063 300   BROWNING PENINSULA                          2021      .. -66.4870  110.5690 GPS            ANT       83.0     87.0  99963
+
+19441 stations
+
+(c) Copyright Commonwealth of Australia 2024, Bureau of Meteorology (ABN 92 637 533 532) 
+Please note Copyright, Disclaimer and Privacy Notice, accessible at <http://www.bom.gov.au/other/copyright.shtml>
+

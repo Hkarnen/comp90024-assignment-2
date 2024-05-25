@@ -1,0 +1,22 @@
+apiVersion: fission.io/v1
+kind: HTTPTrigger
+metadata:
+  creationTimestamp: null
+  name: weather-observations
+spec:
+  createingress: false
+  functionref:
+    functionweights: null
+    name: weather-stations-observations
+    type: name
+  host: ""
+  ingressconfig:
+    annotations: null
+    host: '*'
+    path: /weather-stations/{station-id:[0-9]+}
+    tls: ""
+  method: ""
+  methods:
+  - GET
+  prefix: ""
+  relativeurl: /weather-stations/{station-id:[0-9]+}

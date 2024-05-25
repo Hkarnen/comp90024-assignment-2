@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a69cf5dcafee511caa54134a8da05d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a69cf5dcafee511caa54134a8da05d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a69cf5dcafee511caa54134a8da05d0 = L.map(
+                "map_5a69cf5dcafee511caa54134a8da05d0",
+                {
+                    center: [-37.853914994459885, 144.98990807166467],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3103e670d44c8078b4b54a39e484766 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b3103e670d44c8078b4b54a39e484766.addTo(map_5a69cf5dcafee511caa54134a8da05d0);
+        
+    
+            var marker_cluster_e8a2e62ec5000d225d855adb42fb897d = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_610aab9953811d3bdeb7ca7bfad13177 = L.marker(
+                [-38.09579849243164, 144.53610229492188],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_463a935bcf4e33eed596fb04de71ff1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_610aab9953811d3bdeb7ca7bfad13177.setIcon(icon_463a935bcf4e33eed596fb04de71ff1a);
+        
+    
+        var popup_aad6bf99d4e767415ef5b5d6a557ed37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a613c53fc1fc896ca531ef1db57f945c = $(`<div id="html_a613c53fc1fc896ca531ef1db57f945c" style="width: 100.0%; height: 100.0%;">Point Wilson (WMO: 94847)</div>`)[0];
+                popup_aad6bf99d4e767415ef5b5d6a557ed37.setContent(html_a613c53fc1fc896ca531ef1db57f945c);
+            
+        
+
+        marker_610aab9953811d3bdeb7ca7bfad13177.bindPopup(popup_aad6bf99d4e767415ef5b5d6a557ed37)
+        ;
+
+        
+    
+    
+            marker_610aab9953811d3bdeb7ca7bfad13177.bindTooltip(
+                `<div>
+                     Point Wilson
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b5e952c91aa6a14c7ab1424f4715306 = L.marker(
+                [-38.09579849243164, 144.53610229492188],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_369845693d97e6d02ea9e0a4c605bc87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b5e952c91aa6a14c7ab1424f4715306.setIcon(icon_369845693d97e6d02ea9e0a4c605bc87);
+        
+    
+        var popup_51b2c94dfc85da36857f22795538da3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66c45d29b707a2e2c8cf791941c27160 = $(`<div id="html_66c45d29b707a2e2c8cf791941c27160" style="width: 100.0%; height: 100.0%;">Point Wilson (WMO: 94847)</div>`)[0];
+                popup_51b2c94dfc85da36857f22795538da3c.setContent(html_66c45d29b707a2e2c8cf791941c27160);
+            
+        
+
+        marker_0b5e952c91aa6a14c7ab1424f4715306.bindPopup(popup_51b2c94dfc85da36857f22795538da3c)
+        ;
+
+        
+    
+    
+            marker_0b5e952c91aa6a14c7ab1424f4715306.bindTooltip(
+                `<div>
+                     Point Wilson
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca3996f0c2b867eab300e21e3a712296 = L.marker(
+                [-37.723899841308594, 145.40919494628906],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_04032d2ad591775a0bee9d4ab57f8c8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ca3996f0c2b867eab300e21e3a712296.setIcon(icon_04032d2ad591775a0bee9d4ab57f8c8d);
+        
+    
+        var popup_4583325678d76350161d3abb6a4c1908 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d5a01702618ecd5717542a2587a9e3c = $(`<div id="html_7d5a01702618ecd5717542a2587a9e3c" style="width: 100.0%; height: 100.0%;">Coldstream (WMO: 94864)</div>`)[0];
+                popup_4583325678d76350161d3abb6a4c1908.setContent(html_7d5a01702618ecd5717542a2587a9e3c);
+            
+        
+
+        marker_ca3996f0c2b867eab300e21e3a712296.bindPopup(popup_4583325678d76350161d3abb6a4c1908)
+        ;
+
+        
+    
+    
+            marker_ca3996f0c2b867eab300e21e3a712296.bindTooltip(
+                `<div>
+                     Coldstream
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1f66d3427315f8a4bf8116a05373276 = L.marker(
+                [-37.723899841308594, 145.40919494628906],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_963a19b270955284279c0a23bff9ecab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f1f66d3427315f8a4bf8116a05373276.setIcon(icon_963a19b270955284279c0a23bff9ecab);
+        
+    
+        var popup_f92b2dfee6ef710b8af073f17bff81da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46f01e26971053ce0c721bdd56b57d90 = $(`<div id="html_46f01e26971053ce0c721bdd56b57d90" style="width: 100.0%; height: 100.0%;">Coldstream (WMO: 94864)</div>`)[0];
+                popup_f92b2dfee6ef710b8af073f17bff81da.setContent(html_46f01e26971053ce0c721bdd56b57d90);
+            
+        
+
+        marker_f1f66d3427315f8a4bf8116a05373276.bindPopup(popup_f92b2dfee6ef710b8af073f17bff81da)
+        ;
+
+        
+    
+    
+            marker_f1f66d3427315f8a4bf8116a05373276.bindTooltip(
+                `<div>
+                     Coldstream
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_980377c5de62f917c7f9dfb7111c2efb = L.marker(
+                [-37.85649871826172, 144.75650024414062],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_2d4afeb2cd8070ebc769982b3e367c5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_980377c5de62f917c7f9dfb7111c2efb.setIcon(icon_2d4afeb2cd8070ebc769982b3e367c5c);
+        
+    
+        var popup_55d35e5c383d16d564ba7cbf79d4b9b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18083b2c8ff4d74d817bb16e2a57979b = $(`<div id="html_18083b2c8ff4d74d817bb16e2a57979b" style="width: 100.0%; height: 100.0%;">Laverton (WMO: 94865)</div>`)[0];
+                popup_55d35e5c383d16d564ba7cbf79d4b9b6.setContent(html_18083b2c8ff4d74d817bb16e2a57979b);
+            
+        
+
+        marker_980377c5de62f917c7f9dfb7111c2efb.bindPopup(popup_55d35e5c383d16d564ba7cbf79d4b9b6)
+        ;
+
+        
+    
+    
+            marker_980377c5de62f917c7f9dfb7111c2efb.bindTooltip(
+                `<div>
+                     Laverton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4fd70dad92c3040befebd9d70173236 = L.marker(
+                [-37.85649871826172, 144.75650024414062],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_a0774bd0a71e1b976517cd27d5911636 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d4fd70dad92c3040befebd9d70173236.setIcon(icon_a0774bd0a71e1b976517cd27d5911636);
+        
+    
+        var popup_1440117452a471efff7b207258982cfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e30a2d997b4c3d98ed143157da488c3 = $(`<div id="html_4e30a2d997b4c3d98ed143157da488c3" style="width: 100.0%; height: 100.0%;">Laverton (WMO: 94865)</div>`)[0];
+                popup_1440117452a471efff7b207258982cfa.setContent(html_4e30a2d997b4c3d98ed143157da488c3);
+            
+        
+
+        marker_d4fd70dad92c3040befebd9d70173236.bindPopup(popup_1440117452a471efff7b207258982cfa)
+        ;
+
+        
+    
+    
+            marker_d4fd70dad92c3040befebd9d70173236.bindTooltip(
+                `<div>
+                     Laverton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2721ba631b54b5b7118cad0d9f8ad863 = L.marker(
+                [-37.665401458740234, 144.8321990966797],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_f391b1bcb37f35b74e207d29d865dee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2721ba631b54b5b7118cad0d9f8ad863.setIcon(icon_f391b1bcb37f35b74e207d29d865dee4);
+        
+    
+        var popup_13c3843936f70e70778d8382169b6640 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fe393021b30ef5c2cb6ff342c28cd3e = $(`<div id="html_6fe393021b30ef5c2cb6ff342c28cd3e" style="width: 100.0%; height: 100.0%;">Melbourne Airport (WMO: 94866)</div>`)[0];
+                popup_13c3843936f70e70778d8382169b6640.setContent(html_6fe393021b30ef5c2cb6ff342c28cd3e);
+            
+        
+
+        marker_2721ba631b54b5b7118cad0d9f8ad863.bindPopup(popup_13c3843936f70e70778d8382169b6640)
+        ;
+
+        
+    
+    
+            marker_2721ba631b54b5b7118cad0d9f8ad863.bindTooltip(
+                `<div>
+                     Melbourne Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6177dd9775a500aba81630092c4d5aaa = L.marker(
+                [-37.665401458740234, 144.8321990966797],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_77c61681e8d535dbb82f482d336ab2fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6177dd9775a500aba81630092c4d5aaa.setIcon(icon_77c61681e8d535dbb82f482d336ab2fd);
+        
+    
+        var popup_aba6d6b6146ded0f56c82794043a641c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cc6dd59b7886cdee09c100f09672c79 = $(`<div id="html_4cc6dd59b7886cdee09c100f09672c79" style="width: 100.0%; height: 100.0%;">Melbourne Airport (WMO: 94866)</div>`)[0];
+                popup_aba6d6b6146ded0f56c82794043a641c.setContent(html_4cc6dd59b7886cdee09c100f09672c79);
+            
+        
+
+        marker_6177dd9775a500aba81630092c4d5aaa.bindPopup(popup_aba6d6b6146ded0f56c82794043a641c)
+        ;
+
+        
+    
+    
+            marker_6177dd9775a500aba81630092c4d5aaa.bindTooltip(
+                `<div>
+                     Melbourne Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3804353c7d96ce132de3bda7269e77fa = L.marker(
+                [-37.97999954223633, 145.09620666503906],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_5bfd6315b5bd338d7fc1e437cb34ca68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3804353c7d96ce132de3bda7269e77fa.setIcon(icon_5bfd6315b5bd338d7fc1e437cb34ca68);
+        
+    
+        var popup_69d82c97d1136b996b2a9d9a0c114bac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33c7f35c29d53e17bf66293ea7c16e64 = $(`<div id="html_33c7f35c29d53e17bf66293ea7c16e64" style="width: 100.0%; height: 100.0%;">Moorabbin Airport (WMO: 94870)</div>`)[0];
+                popup_69d82c97d1136b996b2a9d9a0c114bac.setContent(html_33c7f35c29d53e17bf66293ea7c16e64);
+            
+        
+
+        marker_3804353c7d96ce132de3bda7269e77fa.bindPopup(popup_69d82c97d1136b996b2a9d9a0c114bac)
+        ;
+
+        
+    
+    
+            marker_3804353c7d96ce132de3bda7269e77fa.bindTooltip(
+                `<div>
+                     Moorabbin Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e778558b788b8ad98db03ae77238e33 = L.marker(
+                [-37.97999954223633, 145.09620666503906],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_771a8a848da02b286ddf099b0be29456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e778558b788b8ad98db03ae77238e33.setIcon(icon_771a8a848da02b286ddf099b0be29456);
+        
+    
+        var popup_6d4fbc88278c9feb813230c4ea610291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3d7e9aa5469b8b167747a7d1dc69ee7 = $(`<div id="html_b3d7e9aa5469b8b167747a7d1dc69ee7" style="width: 100.0%; height: 100.0%;">Moorabbin Airport (WMO: 94870)</div>`)[0];
+                popup_6d4fbc88278c9feb813230c4ea610291.setContent(html_b3d7e9aa5469b8b167747a7d1dc69ee7);
+            
+        
+
+        marker_4e778558b788b8ad98db03ae77238e33.bindPopup(popup_6d4fbc88278c9feb813230c4ea610291)
+        ;
+
+        
+    
+    
+            marker_4e778558b788b8ad98db03ae77238e33.bindTooltip(
+                `<div>
+                     Moorabbin Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0470451dd7098aca7511de9cf68bb27 = L.marker(
+                [-37.87480163574219, 145.34970092773438],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_999db77ed1b1eab615c68c0aacd2b0f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f0470451dd7098aca7511de9cf68bb27.setIcon(icon_999db77ed1b1eab615c68c0aacd2b0f9);
+        
+    
+        var popup_d49bad1ed1e0efedfaea4eb721171295 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3008029ed14676d7c38d92dcf13a1d70 = $(`<div id="html_3008029ed14676d7c38d92dcf13a1d70" style="width: 100.0%; height: 100.0%;">Ferny Creek (WMO: 94872)</div>`)[0];
+                popup_d49bad1ed1e0efedfaea4eb721171295.setContent(html_3008029ed14676d7c38d92dcf13a1d70);
+            
+        
+
+        marker_f0470451dd7098aca7511de9cf68bb27.bindPopup(popup_d49bad1ed1e0efedfaea4eb721171295)
+        ;
+
+        
+    
+    
+            marker_f0470451dd7098aca7511de9cf68bb27.bindTooltip(
+                `<div>
+                     Ferny Creek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a6c88946c8f91d0525638f3eda3ccc6 = L.marker(
+                [-37.87480163574219, 145.34970092773438],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_a0401c889497626a88434791d38f6c39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1a6c88946c8f91d0525638f3eda3ccc6.setIcon(icon_a0401c889497626a88434791d38f6c39);
+        
+    
+        var popup_633334cab3d2c5d5060670b591187cb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8dfbcc98c0f8810e0cbe977e18d8165 = $(`<div id="html_a8dfbcc98c0f8810e0cbe977e18d8165" style="width: 100.0%; height: 100.0%;">Ferny Creek (WMO: 94872)</div>`)[0];
+                popup_633334cab3d2c5d5060670b591187cb8.setContent(html_a8dfbcc98c0f8810e0cbe977e18d8165);
+            
+        
+
+        marker_1a6c88946c8f91d0525638f3eda3ccc6.bindPopup(popup_633334cab3d2c5d5060670b591187cb8)
+        ;
+
+        
+    
+    
+            marker_1a6c88946c8f91d0525638f3eda3ccc6.bindTooltip(
+                `<div>
+                     Ferny Creek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ec426948e733af22c9d1676585b0259 = L.marker(
+                [-37.86399841308594, 144.96389770507812],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_d26b3259107fed14e874a9b525896d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ec426948e733af22c9d1676585b0259.setIcon(icon_d26b3259107fed14e874a9b525896d14);
+        
+    
+        var popup_8f107070e7bdd819a1d4a8f61a7613ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7508c9971a37f41705d10ee45770479d = $(`<div id="html_7508c9971a37f41705d10ee45770479d" style="width: 100.0%; height: 100.0%;">St Kilda Harbour RMYS (WMO: 95864)</div>`)[0];
+                popup_8f107070e7bdd819a1d4a8f61a7613ed.setContent(html_7508c9971a37f41705d10ee45770479d);
+            
+        
+
+        marker_8ec426948e733af22c9d1676585b0259.bindPopup(popup_8f107070e7bdd819a1d4a8f61a7613ed)
+        ;
+
+        
+    
+    
+            marker_8ec426948e733af22c9d1676585b0259.bindTooltip(
+                `<div>
+                     St Kilda Harbour RMYS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf3ae6f5a54f37a3252cb953f6236eab = L.marker(
+                [-37.86399841308594, 144.96389770507812],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_202c0949b94b763278c0082bd05e670f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf3ae6f5a54f37a3252cb953f6236eab.setIcon(icon_202c0949b94b763278c0082bd05e670f);
+        
+    
+        var popup_992eef74f3a04a709e03989b5556d4fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5eca56606b2fa982b763b255d559e74 = $(`<div id="html_f5eca56606b2fa982b763b255d559e74" style="width: 100.0%; height: 100.0%;">St Kilda Harbour RMYS (WMO: 95864)</div>`)[0];
+                popup_992eef74f3a04a709e03989b5556d4fe.setContent(html_f5eca56606b2fa982b763b255d559e74);
+            
+        
+
+        marker_cf3ae6f5a54f37a3252cb953f6236eab.bindPopup(popup_992eef74f3a04a709e03989b5556d4fe)
+        ;
+
+        
+    
+    
+            marker_cf3ae6f5a54f37a3252cb953f6236eab.bindTooltip(
+                `<div>
+                     St Kilda Harbour RMYS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8c8384d57a7f37720fabd7dfaf3994a = L.marker(
+                [-37.72760009765625, 144.90660095214844],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_cc6d17bc751a26f794333838b56d494f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e8c8384d57a7f37720fabd7dfaf3994a.setIcon(icon_cc6d17bc751a26f794333838b56d494f);
+        
+    
+        var popup_dd317339fcfec41f16902fcef1a026c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcdd2971345e6754e83aaac3d29d91e2 = $(`<div id="html_fcdd2971345e6754e83aaac3d29d91e2" style="width: 100.0%; height: 100.0%;">Essendon Airport (WMO: 95866)</div>`)[0];
+                popup_dd317339fcfec41f16902fcef1a026c4.setContent(html_fcdd2971345e6754e83aaac3d29d91e2);
+            
+        
+
+        marker_e8c8384d57a7f37720fabd7dfaf3994a.bindPopup(popup_dd317339fcfec41f16902fcef1a026c4)
+        ;
+
+        
+    
+    
+            marker_e8c8384d57a7f37720fabd7dfaf3994a.bindTooltip(
+                `<div>
+                     Essendon Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba8cc3f27e1c5a6838d2fd1240c0dc60 = L.marker(
+                [-37.72760009765625, 144.90660095214844],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_a5715e228e9bfb0ff19b63ad54ac4e8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ba8cc3f27e1c5a6838d2fd1240c0dc60.setIcon(icon_a5715e228e9bfb0ff19b63ad54ac4e8a);
+        
+    
+        var popup_f5ae3b9f92714187ad371785419fb4a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9a3a4236dd9b6a47cedec347e4d2e07 = $(`<div id="html_b9a3a4236dd9b6a47cedec347e4d2e07" style="width: 100.0%; height: 100.0%;">Essendon Airport (WMO: 95866)</div>`)[0];
+                popup_f5ae3b9f92714187ad371785419fb4a6.setContent(html_b9a3a4236dd9b6a47cedec347e4d2e07);
+            
+        
+
+        marker_ba8cc3f27e1c5a6838d2fd1240c0dc60.bindPopup(popup_f5ae3b9f92714187ad371785419fb4a6)
+        ;
+
+        
+    
+    
+            marker_ba8cc3f27e1c5a6838d2fd1240c0dc60.bindTooltip(
+                `<div>
+                     Essendon Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75f406a629f5b4fb7395776aba46b5f3 = L.marker(
+                [-37.87099838256836, 145.256103515625],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_3451ecc903d65ad0db7ac9a492ce81db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_75f406a629f5b4fb7395776aba46b5f3.setIcon(icon_3451ecc903d65ad0db7ac9a492ce81db);
+        
+    
+        var popup_a762064f875ebdfb5397a497d499555c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e26f8af2c95b26b75bd80f74438804a6 = $(`<div id="html_e26f8af2c95b26b75bd80f74438804a6" style="width: 100.0%; height: 100.0%;">Scoresby (WMO: 95867)</div>`)[0];
+                popup_a762064f875ebdfb5397a497d499555c.setContent(html_e26f8af2c95b26b75bd80f74438804a6);
+            
+        
+
+        marker_75f406a629f5b4fb7395776aba46b5f3.bindPopup(popup_a762064f875ebdfb5397a497d499555c)
+        ;
+
+        
+    
+    
+            marker_75f406a629f5b4fb7395776aba46b5f3.bindTooltip(
+                `<div>
+                     Scoresby
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e6cb023f0a77be750c82e7809f804ec = L.marker(
+                [-37.87099838256836, 145.256103515625],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_fe40d05a5ede3c1f90770a7132449772 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e6cb023f0a77be750c82e7809f804ec.setIcon(icon_fe40d05a5ede3c1f90770a7132449772);
+        
+    
+        var popup_0c417d013bd51cb5a5809e96be7305a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fd06014f12943988f17733f89490dad = $(`<div id="html_6fd06014f12943988f17733f89490dad" style="width: 100.0%; height: 100.0%;">Scoresby (WMO: 95867)</div>`)[0];
+                popup_0c417d013bd51cb5a5809e96be7305a6.setContent(html_6fd06014f12943988f17733f89490dad);
+            
+        
+
+        marker_4e6cb023f0a77be750c82e7809f804ec.bindPopup(popup_0c417d013bd51cb5a5809e96be7305a6)
+        ;
+
+        
+    
+    
+            marker_4e6cb023f0a77be750c82e7809f804ec.bindTooltip(
+                `<div>
+                     Scoresby
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_157bce64a3f68155d32e98a3145fb1b8 = L.marker(
+                [-37.948299407958984, 144.92689514160156],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_3f69550ad64347db741de9eab39f2721 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_157bce64a3f68155d32e98a3145fb1b8.setIcon(icon_3f69550ad64347db741de9eab39f2721);
+        
+    
+        var popup_af84365b566fad83d5bc65e2b26c6af5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9edab0d8a9ef8a4b765a0f15ea659149 = $(`<div id="html_9edab0d8a9ef8a4b765a0f15ea659149" style="width: 100.0%; height: 100.0%;">Fawkner Beacon (WMO: 95872)</div>`)[0];
+                popup_af84365b566fad83d5bc65e2b26c6af5.setContent(html_9edab0d8a9ef8a4b765a0f15ea659149);
+            
+        
+
+        marker_157bce64a3f68155d32e98a3145fb1b8.bindPopup(popup_af84365b566fad83d5bc65e2b26c6af5)
+        ;
+
+        
+    
+    
+            marker_157bce64a3f68155d32e98a3145fb1b8.bindTooltip(
+                `<div>
+                     Fawkner Beacon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54b2360c884b98e1b75d4079723cd619 = L.marker(
+                [-37.948299407958984, 144.92689514160156],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_bf1ba5f8e2572ac71674732acc27bae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_54b2360c884b98e1b75d4079723cd619.setIcon(icon_bf1ba5f8e2572ac71674732acc27bae7);
+        
+    
+        var popup_ff1ef66e90cbbac42e7df9c12c19be80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5edc55e2e2be0ad5bc2315fc659cea20 = $(`<div id="html_5edc55e2e2be0ad5bc2315fc659cea20" style="width: 100.0%; height: 100.0%;">Fawkner Beacon (WMO: 95872)</div>`)[0];
+                popup_ff1ef66e90cbbac42e7df9c12c19be80.setContent(html_5edc55e2e2be0ad5bc2315fc659cea20);
+            
+        
+
+        marker_54b2360c884b98e1b75d4079723cd619.bindPopup(popup_ff1ef66e90cbbac42e7df9c12c19be80)
+        ;
+
+        
+    
+    
+            marker_54b2360c884b98e1b75d4079723cd619.bindTooltip(
+                `<div>
+                     Fawkner Beacon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f0024e814c31f61eae0c417e8450115 = L.marker(
+                [-37.74079895019531, 145.09719848632812],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_76b6ac23c9737651c75bb8a7724b9788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5f0024e814c31f61eae0c417e8450115.setIcon(icon_76b6ac23c9737651c75bb8a7724b9788);
+        
+    
+        var popup_66db8d9f8d12efb38c5c0ac91b4a77e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96487a7b42c9d568bdb2110083c3d17d = $(`<div id="html_96487a7b42c9d568bdb2110083c3d17d" style="width: 100.0%; height: 100.0%;">Viewbank (WMO: 95874)</div>`)[0];
+                popup_66db8d9f8d12efb38c5c0ac91b4a77e5.setContent(html_96487a7b42c9d568bdb2110083c3d17d);
+            
+        
+
+        marker_5f0024e814c31f61eae0c417e8450115.bindPopup(popup_66db8d9f8d12efb38c5c0ac91b4a77e5)
+        ;
+
+        
+    
+    
+            marker_5f0024e814c31f61eae0c417e8450115.bindTooltip(
+                `<div>
+                     Viewbank
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4005a5a1bcb646d2dd9610908fa744d3 = L.marker(
+                [-37.74079895019531, 145.09719848632812],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_746bc37ab5e5fc990c4c03dd76bfbdb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4005a5a1bcb646d2dd9610908fa744d3.setIcon(icon_746bc37ab5e5fc990c4c03dd76bfbdb0);
+        
+    
+        var popup_4f191ad36946c93ebbcc4759c4729b2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9768cf3bab176d85c000da063b2184e9 = $(`<div id="html_9768cf3bab176d85c000da063b2184e9" style="width: 100.0%; height: 100.0%;">Viewbank (WMO: 95874)</div>`)[0];
+                popup_4f191ad36946c93ebbcc4759c4729b2c.setContent(html_9768cf3bab176d85c000da063b2184e9);
+            
+        
+
+        marker_4005a5a1bcb646d2dd9610908fa744d3.bindPopup(popup_4f191ad36946c93ebbcc4759c4729b2c)
+        ;
+
+        
+    
+    
+            marker_4005a5a1bcb646d2dd9610908fa744d3.bindTooltip(
+                `<div>
+                     Viewbank
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fe621246d7cd87e422ed7ed9e18df01 = L.marker(
+                [-37.82550048828125, 144.98159790039062],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_e341b9a6809aab9ffbe3df0ee63d0dc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0fe621246d7cd87e422ed7ed9e18df01.setIcon(icon_e341b9a6809aab9ffbe3df0ee63d0dc0);
+        
+    
+        var popup_fdf9ccc0969b2c43ea0fe8a2f0aa92c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34eaebbc0bb7ace9bd1bc638857f376e = $(`<div id="html_34eaebbc0bb7ace9bd1bc638857f376e" style="width: 100.0%; height: 100.0%;">Melbourne (Olympic Park) (WMO: 95936)</div>`)[0];
+                popup_fdf9ccc0969b2c43ea0fe8a2f0aa92c3.setContent(html_34eaebbc0bb7ace9bd1bc638857f376e);
+            
+        
+
+        marker_0fe621246d7cd87e422ed7ed9e18df01.bindPopup(popup_fdf9ccc0969b2c43ea0fe8a2f0aa92c3)
+        ;
+
+        
+    
+    
+            marker_0fe621246d7cd87e422ed7ed9e18df01.bindTooltip(
+                `<div>
+                     Melbourne (Olympic Park)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0526bb67b6fb79c6670bc88e7017101f = L.marker(
+                [-37.82550048828125, 144.98159790039062],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_e5dc0b7bc795956a46fded81a65dec5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0526bb67b6fb79c6670bc88e7017101f.setIcon(icon_e5dc0b7bc795956a46fded81a65dec5c);
+        
+    
+        var popup_e33c9044084a1f5cf3e302630c78132d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bcb199db2f51c8b40bfe466d13144c9 = $(`<div id="html_5bcb199db2f51c8b40bfe466d13144c9" style="width: 100.0%; height: 100.0%;">Melbourne (Olympic Park) (WMO: 95936)</div>`)[0];
+                popup_e33c9044084a1f5cf3e302630c78132d.setContent(html_5bcb199db2f51c8b40bfe466d13144c9);
+            
+        
+
+        marker_0526bb67b6fb79c6670bc88e7017101f.bindPopup(popup_e33c9044084a1f5cf3e302630c78132d)
+        ;
+
+        
+    
+    
+            marker_0526bb67b6fb79c6670bc88e7017101f.bindTooltip(
+                `<div>
+                     Melbourne (Olympic Park)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db7b05952dfb333950cd657dd8b89980 = L.marker(
+                [-37.92729949951172, 144.75660705566406],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_4ed132c085aa5743882a856fab86cf71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_db7b05952dfb333950cd657dd8b89980.setIcon(icon_4ed132c085aa5743882a856fab86cf71);
+        
+    
+        var popup_2ed7bd2e26ec717fac74e298751c444e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf9c0c91bac6c44c0236e8acf6b6b178 = $(`<div id="html_bf9c0c91bac6c44c0236e8acf6b6b178" style="width: 100.0%; height: 100.0%;">Point Cook (WMO: 95941)</div>`)[0];
+                popup_2ed7bd2e26ec717fac74e298751c444e.setContent(html_bf9c0c91bac6c44c0236e8acf6b6b178);
+            
+        
+
+        marker_db7b05952dfb333950cd657dd8b89980.bindPopup(popup_2ed7bd2e26ec717fac74e298751c444e)
+        ;
+
+        
+    
+    
+            marker_db7b05952dfb333950cd657dd8b89980.bindTooltip(
+                `<div>
+                     Point Cook
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1e6d975e617b8816aceedbed588ade5 = L.marker(
+                [-37.92729949951172, 144.75660705566406],
+                {}
+            ).addTo(marker_cluster_e8a2e62ec5000d225d855adb42fb897d);
+        
+    
+            var icon_56353978b34e03e8e00fc1fb944d16af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c1e6d975e617b8816aceedbed588ade5.setIcon(icon_56353978b34e03e8e00fc1fb944d16af);
+        
+    
+        var popup_3ae88c82a200b4a2a504334f00048e00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e369c5d50aee3aaea3c9224c78985b7b = $(`<div id="html_e369c5d50aee3aaea3c9224c78985b7b" style="width: 100.0%; height: 100.0%;">Point Cook (WMO: 95941)</div>`)[0];
+                popup_3ae88c82a200b4a2a504334f00048e00.setContent(html_e369c5d50aee3aaea3c9224c78985b7b);
+            
+        
+
+        marker_c1e6d975e617b8816aceedbed588ade5.bindPopup(popup_3ae88c82a200b4a2a504334f00048e00)
+        ;
+
+        
+    
+    
+            marker_c1e6d975e617b8816aceedbed588ade5.bindTooltip(
+                `<div>
+                     Point Cook
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_e8a2e62ec5000d225d855adb42fb897d.addTo(map_5a69cf5dcafee511caa54134a8da05d0);
+        
+</script>
+</html>

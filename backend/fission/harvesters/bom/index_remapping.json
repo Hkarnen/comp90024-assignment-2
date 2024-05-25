@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "index": {
+        "number_of_shards": 3,
+        "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "wmo": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "local_date_time_full": {
+        "type": "date",
+        "format": "yyyyMMddHHmmss"
+      },
+      "aifstime_utc": {
+        "type": "date",
+        "format": "yyyyMMddHHmmss"
+      },
+      "lat": {
+        "type": "float"
+      },
+      "lon": {
+        "type": "float"
+      },
+      "precise_lat": {
+        "type": "float"
+      },
+      "precise_lon": {
+        "type": "float"
+      }
+    }
+  }
+}

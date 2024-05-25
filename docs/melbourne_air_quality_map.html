@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a0f1c61bd287d883920840aea2b1118 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1a0f1c61bd287d883920840aea2b1118" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a0f1c61bd287d883920840aea2b1118 = L.map(
+                "map_1a0f1c61bd287d883920840aea2b1118",
+                {
+                    center: [-37.82517351422991, 144.9557157244001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4aade5d4ff97468ab6160ab1d703018f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4aade5d4ff97468ab6160ab1d703018f.addTo(map_1a0f1c61bd287d883920840aea2b1118);
+        
+    
+            var marker_cluster_57e6c1aaf136b668f2d3869f75bedb53 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_cbbff137d240d2a2278a2c41b9578a2a = L.marker(
+                [-37.80266189575195, 144.8778076171875],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_fadc6f8164360edd4deca86d4348ed09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cbbff137d240d2a2278a2c41b9578a2a.setIcon(icon_fadc6f8164360edd4deca86d4348ed09);
+        
+    
+        var popup_cc7006a88dfe17b2af1efb592c83504a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32a66341547ce28bd5031a94dc8a7abe = $(`<div id="html_32a66341547ce28bd5031a94dc8a7abe" style="width: 100.0%; height: 100.0%;">Footscray (PM2.5: 10.29 µg/m³)</div>`)[0];
+                popup_cc7006a88dfe17b2af1efb592c83504a.setContent(html_32a66341547ce28bd5031a94dc8a7abe);
+            
+        
+
+        marker_cbbff137d240d2a2278a2c41b9578a2a.bindPopup(popup_cc7006a88dfe17b2af1efb592c83504a)
+        ;
+
+        
+    
+    
+            marker_cbbff137d240d2a2278a2c41b9578a2a.bindTooltip(
+                `<div>
+                     Footscray
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cbc6ce60587be2b461f300742139721 = L.marker(
+                [-37.92631530761719, 144.75669860839844],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_5732b69735c34e4a1b1e62f98fdfbbc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6cbc6ce60587be2b461f300742139721.setIcon(icon_5732b69735c34e4a1b1e62f98fdfbbc1);
+        
+    
+        var popup_5e19ae7638c26d2dd4b06d775f6ef8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07160e76e348b4e8af04f78ab55bf410 = $(`<div id="html_07160e76e348b4e8af04f78ab55bf410" style="width: 100.0%; height: 100.0%;">Point Cook (PM2.5: 9.62 µg/m³)</div>`)[0];
+                popup_5e19ae7638c26d2dd4b06d775f6ef8b7.setContent(html_07160e76e348b4e8af04f78ab55bf410);
+            
+        
+
+        marker_6cbc6ce60587be2b461f300742139721.bindPopup(popup_5e19ae7638c26d2dd4b06d775f6ef8b7)
+        ;
+
+        
+    
+    
+            marker_6cbc6ce60587be2b461f300742139721.bindTooltip(
+                `<div>
+                     Point Cook
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7af552b132fcc6e3ad0a4cdf13554c50 = L.marker(
+                [-37.807395935058594, 144.97000122070312],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_5d0dc036ef21181316002c1cd14dc35b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7af552b132fcc6e3ad0a4cdf13554c50.setIcon(icon_5d0dc036ef21181316002c1cd14dc35b);
+        
+    
+        var popup_aa16d38003d7fb0043b5813cf8899b5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18e44dffc18da49e9c58cf058e9a8a01 = $(`<div id="html_18e44dffc18da49e9c58cf058e9a8a01" style="width: 100.0%; height: 100.0%;">Melbourne CBD (PM2.5: 15.52 µg/m³)</div>`)[0];
+                popup_aa16d38003d7fb0043b5813cf8899b5b.setContent(html_18e44dffc18da49e9c58cf058e9a8a01);
+            
+        
+
+        marker_7af552b132fcc6e3ad0a4cdf13554c50.bindPopup(popup_aa16d38003d7fb0043b5813cf8899b5b)
+        ;
+
+        
+    
+    
+            marker_7af552b132fcc6e3ad0a4cdf13554c50.bindTooltip(
+                `<div>
+                     Melbourne CBD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3632af2c4693a930fe8b248d1515ed91 = L.marker(
+                [-37.84412384033203, 144.8616180419922],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_826623ffc55019dfb51809245a759d84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3632af2c4693a930fe8b248d1515ed91.setIcon(icon_826623ffc55019dfb51809245a759d84);
+        
+    
+        var popup_0289621abd4847ec8ead378607aa16da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207de17834170e4c616038c5675924dd = $(`<div id="html_207de17834170e4c616038c5675924dd" style="width: 100.0%; height: 100.0%;">Altona North (PM2.5: 10.12 µg/m³)</div>`)[0];
+                popup_0289621abd4847ec8ead378607aa16da.setContent(html_207de17834170e4c616038c5675924dd);
+            
+        
+
+        marker_3632af2c4693a930fe8b248d1515ed91.bindPopup(popup_0289621abd4847ec8ead378607aa16da)
+        ;
+
+        
+    
+    
+            marker_3632af2c4693a930fe8b248d1515ed91.bindTooltip(
+                `<div>
+                     Altona North
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38c197c01e0bcff9e24cc5bba39cd70a = L.marker(
+                [-37.98575973510742, 145.19869995117188],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_06a5e470c0eba32376111bc302af7300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38c197c01e0bcff9e24cc5bba39cd70a.setIcon(icon_06a5e470c0eba32376111bc302af7300);
+        
+    
+        var popup_d83f4f1d8f3f15e69c0ca9ac54d16ccb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc9b3f0cb6dd29e339b535250b51734f = $(`<div id="html_cc9b3f0cb6dd29e339b535250b51734f" style="width: 100.0%; height: 100.0%;">Dandenong (PM2.5: 10.01 µg/m³)</div>`)[0];
+                popup_d83f4f1d8f3f15e69c0ca9ac54d16ccb.setContent(html_cc9b3f0cb6dd29e339b535250b51734f);
+            
+        
+
+        marker_38c197c01e0bcff9e24cc5bba39cd70a.bindPopup(popup_d83f4f1d8f3f15e69c0ca9ac54d16ccb)
+        ;
+
+        
+    
+    
+            marker_38c197c01e0bcff9e24cc5bba39cd70a.bindTooltip(
+                `<div>
+                     Dandenong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c001ec5fd0502dc0fdbbe0a6f0f0bdb2 = L.marker(
+                [-37.82872772216797, 145.1324005126953],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_412c1c92cda466e8f2ba925df1bea4f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c001ec5fd0502dc0fdbbe0a6f0f0bdb2.setIcon(icon_412c1c92cda466e8f2ba925df1bea4f4);
+        
+    
+        var popup_0a08dcdaf10c8f5bb815d1ef0ecd8e5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c49206b030f8ca53c3990f3d5fe42e8 = $(`<div id="html_1c49206b030f8ca53c3990f3d5fe42e8" style="width: 100.0%; height: 100.0%;">Box Hill (PM2.5: 10.02 µg/m³)</div>`)[0];
+                popup_0a08dcdaf10c8f5bb815d1ef0ecd8e5c.setContent(html_1c49206b030f8ca53c3990f3d5fe42e8);
+            
+        
+
+        marker_c001ec5fd0502dc0fdbbe0a6f0f0bdb2.bindPopup(popup_0a08dcdaf10c8f5bb815d1ef0ecd8e5c)
+        ;
+
+        
+    
+    
+            marker_c001ec5fd0502dc0fdbbe0a6f0f0bdb2.bindTooltip(
+                `<div>
+                     Box Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_875a1acb61d8b0da30d91de7f16f6e21 = L.marker(
+                [-37.82209777832031, 144.84710693359375],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_58bc039ca76d508a461f5844ce47bb30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_875a1acb61d8b0da30d91de7f16f6e21.setIcon(icon_58bc039ca76d508a461f5844ce47bb30);
+        
+    
+        var popup_9c4bbf2f0a52dc0402f9afc43abe0db4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f274e2b71766ab695238e8513a64b58 = $(`<div id="html_2f274e2b71766ab695238e8513a64b58" style="width: 100.0%; height: 100.0%;">Brooklyn (PM2.5: 11.36 µg/m³)</div>`)[0];
+                popup_9c4bbf2f0a52dc0402f9afc43abe0db4.setContent(html_2f274e2b71766ab695238e8513a64b58);
+            
+        
+
+        marker_875a1acb61d8b0da30d91de7f16f6e21.bindPopup(popup_9c4bbf2f0a52dc0402f9afc43abe0db4)
+        ;
+
+        
+    
+    
+            marker_875a1acb61d8b0da30d91de7f16f6e21.bindTooltip(
+                `<div>
+                     Brooklyn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1d6e19fe5d6c19db738b52c5b07e5d5 = L.marker(
+                [-37.77511978149414, 145.32839965820312],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_4f52cbfe57e5dcf5cf69c44ba6a38689 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1d6e19fe5d6c19db738b52c5b07e5d5.setIcon(icon_4f52cbfe57e5dcf5cf69c44ba6a38689);
+        
+    
+        var popup_725bf87729b7e0a416752614ac1634e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe4546db7352e3aa5d33f5a992ae0084 = $(`<div id="html_fe4546db7352e3aa5d33f5a992ae0084" style="width: 100.0%; height: 100.0%;">Mooroolbark (PM2.5: 13.64 µg/m³)</div>`)[0];
+                popup_725bf87729b7e0a416752614ac1634e0.setContent(html_fe4546db7352e3aa5d33f5a992ae0084);
+            
+        
+
+        marker_e1d6e19fe5d6c19db738b52c5b07e5d5.bindPopup(popup_725bf87729b7e0a416752614ac1634e0)
+        ;
+
+        
+    
+    
+            marker_e1d6e19fe5d6c19db738b52c5b07e5d5.bindTooltip(
+                `<div>
+                     Mooroolbark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad3070f3253e8a8bcf16cc88f9407fa2 = L.marker(
+                [-37.81190872192383, 144.8740997314453],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_bc634ba610b6964f084de0f1d05fde63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad3070f3253e8a8bcf16cc88f9407fa2.setIcon(icon_bc634ba610b6964f084de0f1d05fde63);
+        
+    
+        var popup_3616ab1e72b0fcd5b691f2478f0f35f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bef7cda62fea0cb18a9634873b71f34 = $(`<div id="html_6bef7cda62fea0cb18a9634873b71f34" style="width: 100.0%; height: 100.0%;">Kingsville (PM2.5: 10.59 µg/m³)</div>`)[0];
+                popup_3616ab1e72b0fcd5b691f2478f0f35f2.setContent(html_6bef7cda62fea0cb18a9634873b71f34);
+            
+        
+
+        marker_ad3070f3253e8a8bcf16cc88f9407fa2.bindPopup(popup_3616ab1e72b0fcd5b691f2478f0f35f2)
+        ;
+
+        
+    
+    
+            marker_ad3070f3253e8a8bcf16cc88f9407fa2.bindTooltip(
+                `<div>
+                     Kingsville
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ad0e04090d8a6defaa00db969026dd4 = L.marker(
+                [-37.827430725097656, 144.88009643554688],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_fa3f91d71c29dba872eb6c4500b7cd0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ad0e04090d8a6defaa00db969026dd4.setIcon(icon_fa3f91d71c29dba872eb6c4500b7cd0a);
+        
+    
+        var popup_075b3c35a873c2097693a52c43a82a81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66849ac9bd0cd0ef65631c7930bb0603 = $(`<div id="html_66849ac9bd0cd0ef65631c7930bb0603" style="width: 100.0%; height: 100.0%;">Spotswood (PM2.5: 9.90 µg/m³)</div>`)[0];
+                popup_075b3c35a873c2097693a52c43a82a81.setContent(html_66849ac9bd0cd0ef65631c7930bb0603);
+            
+        
+
+        marker_5ad0e04090d8a6defaa00db969026dd4.bindPopup(popup_075b3c35a873c2097693a52c43a82a81)
+        ;
+
+        
+    
+    
+            marker_5ad0e04090d8a6defaa00db969026dd4.bindTooltip(
+                `<div>
+                     Spotswood
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd455a0db871b95f49c6e9d19592fa5b = L.marker(
+                [-37.77840805053711, 145.0305938720703],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_d38e5f834c465402d88db3f1f8b4ba2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cd455a0db871b95f49c6e9d19592fa5b.setIcon(icon_d38e5f834c465402d88db3f1f8b4ba2e);
+        
+    
+        var popup_bef5165d594d87b9375753ef6fa16ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4064affda4445c3f07a4a5a4ba6aed6 = $(`<div id="html_d4064affda4445c3f07a4a5a4ba6aed6" style="width: 100.0%; height: 100.0%;">Alphington (PM2.5: 13.42 µg/m³)</div>`)[0];
+                popup_bef5165d594d87b9375753ef6fa16ef2.setContent(html_d4064affda4445c3f07a4a5a4ba6aed6);
+            
+        
+
+        marker_cd455a0db871b95f49c6e9d19592fa5b.bindPopup(popup_bef5165d594d87b9375753ef6fa16ef2)
+        ;
+
+        
+    
+    
+            marker_cd455a0db871b95f49c6e9d19592fa5b.bindTooltip(
+                `<div>
+                     Alphington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96aabd59618c99e000b83d2b454fb36b = L.marker(
+                [-37.91354751586914, 144.9980010986328],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_8d5ee9dc2c000ce804c68aaa61896421 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96aabd59618c99e000b83d2b454fb36b.setIcon(icon_8d5ee9dc2c000ce804c68aaa61896421);
+        
+    
+        var popup_d22b42e7e1ee9aba0494ec336f26931d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c73d7f8abfbc9ae2aa24364dc8f4288 = $(`<div id="html_5c73d7f8abfbc9ae2aa24364dc8f4288" style="width: 100.0%; height: 100.0%;">Brighton (PM2.5: 11.51 µg/m³)</div>`)[0];
+                popup_d22b42e7e1ee9aba0494ec336f26931d.setContent(html_5c73d7f8abfbc9ae2aa24364dc8f4288);
+            
+        
+
+        marker_96aabd59618c99e000b83d2b454fb36b.bindPopup(popup_d22b42e7e1ee9aba0494ec336f26931d)
+        ;
+
+        
+    
+    
+            marker_96aabd59618c99e000b83d2b454fb36b.bindTooltip(
+                `<div>
+                     Brighton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59fed1e1d44a2d15d95735fda72ace3b = L.marker(
+                [-37.70645523071289, 144.56689453125],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_745ee291ec76934573271035fef71bbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59fed1e1d44a2d15d95735fda72ace3b.setIcon(icon_745ee291ec76934573271035fef71bbc);
+        
+    
+        var popup_b9d7c804abfb8b05803a71a3cf38b6b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b77b5949c7ef3a686dbe80ccdd9f0c57 = $(`<div id="html_b77b5949c7ef3a686dbe80ccdd9f0c57" style="width: 100.0%; height: 100.0%;">Melton (PM2.5: 7.09 µg/m³)</div>`)[0];
+                popup_b9d7c804abfb8b05803a71a3cf38b6b7.setContent(html_b77b5949c7ef3a686dbe80ccdd9f0c57);
+            
+        
+
+        marker_59fed1e1d44a2d15d95735fda72ace3b.bindPopup(popup_b9d7c804abfb8b05803a71a3cf38b6b7)
+        ;
+
+        
+    
+    
+            marker_59fed1e1d44a2d15d95735fda72ace3b.bindTooltip(
+                `<div>
+                     Melton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab5655b3a128d45102b4ceaf437056be = L.marker(
+                [-37.722476959228516, 145.05760192871094],
+                {}
+            ).addTo(marker_cluster_57e6c1aaf136b668f2d3869f75bedb53);
+        
+    
+            var icon_9cede4046fe32df95fbd61f1892b8ded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab5655b3a128d45102b4ceaf437056be.setIcon(icon_9cede4046fe32df95fbd61f1892b8ded);
+        
+    
+        var popup_e9e76fc7a024a96a441642458fec5ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60794373db5a9569012d9dd67b326ec2 = $(`<div id="html_60794373db5a9569012d9dd67b326ec2" style="width: 100.0%; height: 100.0%;">Macleod (PM2.5: 9.61 µg/m³)</div>`)[0];
+                popup_e9e76fc7a024a96a441642458fec5ece.setContent(html_60794373db5a9569012d9dd67b326ec2);
+            
+        
+
+        marker_ab5655b3a128d45102b4ceaf437056be.bindPopup(popup_e9e76fc7a024a96a441642458fec5ece)
+        ;
+
+        
+    
+    
+            marker_ab5655b3a128d45102b4ceaf437056be.bindTooltip(
+                `<div>
+                     Macleod
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_57e6c1aaf136b668f2d3869f75bedb53.addTo(map_1a0f1c61bd287d883920840aea2b1118);
+        
+</script>
+</html>

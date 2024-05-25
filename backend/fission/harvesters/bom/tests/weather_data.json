@@ -1,0 +1,63 @@
+{
+	"observations": {
+		"notice": [
+			{
+				"copyright": "Copyright Commonwealth of Australia 2024, Bureau of Meteorology. For more information see: http://www.bom.gov.au/other/copyright.shtml http://www.bom.gov.au/other/disclaimer.shtml",
+				"copyright_url": "http://www.bom.gov.au/other/copyright.shtml",
+				"disclaimer_url": "http://www.bom.gov.au/other/disclaimer.shtml",
+				"feedback_url": "http://www.bom.gov.au/other/feedback"
+			}
+		],
+		"header": [
+			{
+				"refresh_message": "Issued at  3:02 pm EST Saturday  4 May 2024",
+				"ID": "IDV60801",
+				"main_ID": "IDV60800",
+				"name": "Charlton",
+				"state_time_zone": "VIC",
+				"time_zone": "EST",
+				"product_name": "Weather Observations",
+				"state": "Victoria"
+			}
+		],
+		"data": [
+			{
+				"sort_order": 0,
+				"wmo": 94839,
+				"name": "Charlton",
+				"history_product": "IDV60801",
+				"local_date_time": "04/03:00pm",
+				"local_date_time_full": "20240504150000",
+				"aifstime_utc": "20240504050000",
+				"lat": -36.3,
+				"lon": 143.3,
+				"apparent_t": 15.8,
+				"cloud": "-",
+				"cloud_base_m": null,
+				"cloud_oktas": null,
+				"cloud_type": "-",
+				"cloud_type_id": null,
+				"delta_t": 7.2,
+				"gust_kmh": 24,
+				"gust_kt": 13,
+				"air_temp": 20.1,
+				"dewpt": 5.4,
+				"press": 1022.5,
+				"press_msl": 1022.5,
+				"press_qnh": 1022.4,
+				"press_tend": "-",
+				"rain_trace": "0.0",
+				"rel_hum": 38,
+				"sea_state": "-",
+				"swell_dir_worded": "-",
+				"swell_height": null,
+				"swell_period": null,
+				"vis_km": "-",
+				"weather": "-",
+				"wind_dir": "ESE",
+				"wind_spd_kmh": 17,
+				"wind_spd_kt": 9
+			}
+		]
+	}
+}

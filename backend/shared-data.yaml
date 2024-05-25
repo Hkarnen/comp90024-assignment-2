@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: shared-data
+data:
+  ES_USERNAME: elastic
+  ES_PASSWORD: elastic
+  TRAFFIC_API_KEY: bdfa4381e8424804b45fc2bb858950ee
+  EPA_API_KEY: afe31938fe2d413a9ba7cbba7a3cebe8

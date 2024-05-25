@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ebfb721b5aeaf05ee9bb9f088e9c83af {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ebfb721b5aeaf05ee9bb9f088e9c83af" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ebfb721b5aeaf05ee9bb9f088e9c83af = L.map(
+                "map_ebfb721b5aeaf05ee9bb9f088e9c83af",
+                {
+                    center: [-37.8136, 144.9631],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4483b41ca159d98c914b705533170da6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4483b41ca159d98c914b705533170da6.addTo(map_ebfb721b5aeaf05ee9bb9f088e9c83af);
+        
+    
+            var marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_a739124273d7f141e801d213ce36a8e0 = L.marker(
+                [-38.091185, 145.496718],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_aeb3540102d329ed2d5f63d9adb57695 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a739124273d7f141e801d213ce36a8e0.setIcon(icon_aeb3540102d329ed2d5f63d9adb57695);
+        
+    
+        var popup_ab9811b0288f637e2067db4e6ee994d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cbfc0446e322a2bba74da2531d63d89 = $(`<div id="html_8cbfc0446e322a2bba74da2531d63d89" style="width: 100.0%; height: 100.0%;">Monash_Fwy (Segment Name: Koo Wee Rup Rd to Cardinia Rd)</div>`)[0];
+                popup_ab9811b0288f637e2067db4e6ee994d3.setContent(html_8cbfc0446e322a2bba74da2531d63d89);
+            
+        
+
+        marker_a739124273d7f141e801d213ce36a8e0.bindPopup(popup_ab9811b0288f637e2067db4e6ee994d3)
+        ;
+
+        
+    
+    
+            marker_a739124273d7f141e801d213ce36a8e0.bindTooltip(
+                `<div>
+                     Monash_Fwy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac4ead41fc55e67bb121c34b4aec05e8 = L.marker(
+                [-38.100378, 145.14221],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_9bfd22d120f14d02daae7072a07df731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac4ead41fc55e67bb121c34b4aec05e8.setIcon(icon_9bfd22d120f14d02daae7072a07df731);
+        
+    
+        var popup_29897c7658c70f26bf3de3e9f6b12d27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc4e873f740b57d266fe89d269ceac95 = $(`<div id="html_dc4e873f740b57d266fe89d269ceac95" style="width: 100.0%; height: 100.0%;">E'link (Segment Name: Frankston Fwy to Thompson Rd)</div>`)[0];
+                popup_29897c7658c70f26bf3de3e9f6b12d27.setContent(html_dc4e873f740b57d266fe89d269ceac95);
+            
+        
+
+        marker_ac4ead41fc55e67bb121c34b4aec05e8.bindPopup(popup_29897c7658c70f26bf3de3e9f6b12d27)
+        ;
+
+        
+    
+    
+            marker_ac4ead41fc55e67bb121c34b4aec05e8.bindTooltip(
+                `<div>
+                     E'link
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3a7d956873bcb00f06b1520fc6956ea = L.marker(
+                [-37.708392, 144.8905],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_031e7cfd4577f929805707e2ef4fe2be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3a7d956873bcb00f06b1520fc6956ea.setIcon(icon_031e7cfd4577f929805707e2ef4fe2be);
+        
+    
+        var popup_151087015ff2d3ff2d7a1a64446e4475 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99704d29522408189f4917577027a997 = $(`<div id="html_99704d29522408189f4917577027a997" style="width: 100.0%; height: 100.0%;">Tullamarine_Fwy (Segment Name: Melrose Dve To English St)</div>`)[0];
+                popup_151087015ff2d3ff2d7a1a64446e4475.setContent(html_99704d29522408189f4917577027a997);
+            
+        
+
+        marker_e3a7d956873bcb00f06b1520fc6956ea.bindPopup(popup_151087015ff2d3ff2d7a1a64446e4475)
+        ;
+
+        
+    
+    
+            marker_e3a7d956873bcb00f06b1520fc6956ea.bindTooltip(
+                `<div>
+                     Tullamarine_Fwy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2938261537d25f513a20626a74d533f8 = L.marker(
+                [-37.79728537437015, 145.12700925059949],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_c416e24e6c3fa787046b8b6b13db2242 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2938261537d25f513a20626a74d533f8.setIcon(icon_c416e24e6c3fa787046b8b6b13db2242);
+        
+    
+        var popup_6ef894f84181dcd7eb0f9465762fffbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca2c910dda84262f6f7d05c74a370cc4 = $(`<div id="html_ca2c910dda84262f6f7d05c74a370cc4" style="width: 100.0%; height: 100.0%;">Eastern_Fwy (Segment Name: Tram Rd to Elgar Rd)</div>`)[0];
+                popup_6ef894f84181dcd7eb0f9465762fffbf.setContent(html_ca2c910dda84262f6f7d05c74a370cc4);
+            
+        
+
+        marker_2938261537d25f513a20626a74d533f8.bindPopup(popup_6ef894f84181dcd7eb0f9465762fffbf)
+        ;
+
+        
+    
+    
+            marker_2938261537d25f513a20626a74d533f8.bindTooltip(
+                `<div>
+                     Eastern_Fwy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b92025b38e24506fc975f43a0fbc8a49 = L.marker(
+                [-37.832257, 144.810947],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_b68fd8fad421efba39421b4049a70b88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b92025b38e24506fc975f43a0fbc8a49.setIcon(icon_b68fd8fad421efba39421b4049a70b88);
+        
+    
+        var popup_316ec7061baefb30301f6c3ae98fde3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42ab0e339fdc4c27480b23505a5d0ecf = $(`<div id="html_42ab0e339fdc4c27480b23505a5d0ecf" style="width: 100.0%; height: 100.0%;">Western_Ring_Rd (Segment Name: PHW to Boundary Rd)</div>`)[0];
+                popup_316ec7061baefb30301f6c3ae98fde3b.setContent(html_42ab0e339fdc4c27480b23505a5d0ecf);
+            
+        
+
+        marker_b92025b38e24506fc975f43a0fbc8a49.bindPopup(popup_316ec7061baefb30301f6c3ae98fde3b)
+        ;
+
+        
+    
+    
+            marker_b92025b38e24506fc975f43a0fbc8a49.bindTooltip(
+                `<div>
+                     Western_Ring_Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e65ba63dcd8f6d09c6959396d1862791 = L.marker(
+                [-38.27077329148022, 145.06956896386038],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_1fdd7b4d37e859c2131f7553f1a58d58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e65ba63dcd8f6d09c6959396d1862791.setIcon(icon_1fdd7b4d37e859c2131f7553f1a58d58);
+        
+    
+        var popup_6f947f59c49a636e7b058cbd101c6604 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7a2414b68f869967d521ab6beea8481 = $(`<div id="html_f7a2414b68f869967d521ab6beea8481" style="width: 100.0%; height: 100.0%;">Mornington_Peninsula_Fwy (Segment Name: Moorooduc Hwy to Bungower Rd)</div>`)[0];
+                popup_6f947f59c49a636e7b058cbd101c6604.setContent(html_f7a2414b68f869967d521ab6beea8481);
+            
+        
+
+        marker_e65ba63dcd8f6d09c6959396d1862791.bindPopup(popup_6f947f59c49a636e7b058cbd101c6604)
+        ;
+
+        
+    
+    
+            marker_e65ba63dcd8f6d09c6959396d1862791.bindTooltip(
+                `<div>
+                     Mornington_Peninsula_Fwy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd1794791af635c3824fa340053a2cf2 = L.marker(
+                [-37.71243300647518, 144.8310178729383],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_5c88d4618c67cc8b405e5cb1b3e56f5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd1794791af635c3824fa340053a2cf2.setIcon(icon_5c88d4618c67cc8b405e5cb1b3e56f5c);
+        
+    
+        var popup_2c200ba003b3ac5a5f793124f6dbf57e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e241a064c630617407d22ea3059182de = $(`<div id="html_e241a064c630617407d22ea3059182de" style="width: 100.0%; height: 100.0%;">Calder_Fwy (Segment Name: Green Gully Rd to Melton Hwy)</div>`)[0];
+                popup_2c200ba003b3ac5a5f793124f6dbf57e.setContent(html_e241a064c630617407d22ea3059182de);
+            
+        
+
+        marker_bd1794791af635c3824fa340053a2cf2.bindPopup(popup_2c200ba003b3ac5a5f793124f6dbf57e)
+        ;
+
+        
+    
+    
+            marker_bd1794791af635c3824fa340053a2cf2.bindTooltip(
+                `<div>
+                     Calder_Fwy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bd45bc78b3dc54aec042918807a6578 = L.marker(
+                [-37.68664060017551, 145.06763358625142],
+                {}
+            ).addTo(marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41);
+        
+    
+            var icon_a42dca8cb9f29a4927587d7961849a24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bd45bc78b3dc54aec042918807a6578.setIcon(icon_a42dca8cb9f29a4927587d7961849a24);
+        
+    
+        var popup_3a43a2abfe8d81e1430d71f1482bd192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0afeaa19efeebca310c48e627ff423c7 = $(`<div id="html_0afeaa19efeebca310c48e627ff423c7" style="width: 100.0%; height: 100.0%;">Metropolitan_Ring_Rd (Segment Name: Plenty Rd to Dalton Rd)</div>`)[0];
+                popup_3a43a2abfe8d81e1430d71f1482bd192.setContent(html_0afeaa19efeebca310c48e627ff423c7);
+            
+        
+
+        marker_4bd45bc78b3dc54aec042918807a6578.bindPopup(popup_3a43a2abfe8d81e1430d71f1482bd192)
+        ;
+
+        
+    
+    
+            marker_4bd45bc78b3dc54aec042918807a6578.bindTooltip(
+                `<div>
+                     Metropolitan_Ring_Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_8e6e2ac7b70233f1b5eb387f12094a41.addTo(map_ebfb721b5aeaf05ee9bb9f088e9c83af);
+        
+</script>
+</html>
